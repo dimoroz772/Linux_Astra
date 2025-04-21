@@ -6,28 +6,3 @@
  <br/>
 <i> <a href="URL"><b>NAME</b></a><br/><i/>
  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
- <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
- <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
- <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
-  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
