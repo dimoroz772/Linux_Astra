@@ -4,5 +4,5 @@
 </p><br/>
 <h1 align="Center"><i>Astra Linux</i></h1>
  <br/>
-<i> <a href="URL"><b>NAME</b></a><br/><i/>
+<i> <a href="https://dimoroz772.github.io/Linux_Astra/Web_Local_repository.html"><b>Local_repository</b></a><br/><i/>
  <br/>
