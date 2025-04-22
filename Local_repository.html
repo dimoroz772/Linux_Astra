@@ -1,0 +1,199 @@
+<head>
+  <title>Local repository</title>
+  <link rel="shortcut icon" href="./Temp/Logo.png" type="image/png">
+</head>
+ <head>
+  <meta charset="utf-8">
+ </head>
+<style>
+.neonText1 {
+  color: #87CEFA;
+  text-shadow:
+      0 0 1px #4169E1,
+      0 0 1px #4169E1,
+      0 0 1px #4169E1,
+      0 0 1px #4169E1,
+      0 0 1px #4169E1,
+      0 0 1px #4169E1,
+      0 0 1px #4169E1,
+      0 0 1px #4169E1;
+}
+.neonText2 {
+  color: #00FF00;
+  text-shadow:
+      0 0 1px #006400,
+      0 0 1px #006400,
+      0 0 1px #006400,
+      0 0 1px #006400,
+      0 0 1px #006400,
+      0 0 1px #006400,
+      0 0 1px #006400,
+      0 0 1px #006400;
+}
+.neonText3 {
+  color: #ff0000;
+  text-shadow:
+      0 0 1px #640000,
+      0 0 1px #640000,
+      0 0 1px #640000,
+      0 0 1px #640000,
+      0 0 1px #640000,
+      0 0 1px #640000,
+      0 0 1px #640000,
+      0 0 1px #640000;
+}
+.neonText4 {
+  color: #ffffff;
+}
+/* Additional styling */
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #cfcfcf;
+}
+a {
+    text-decoration: none;
+}
+p {
+  text-indent: 1.5em;
+  font-family: monospace;
+  font-weight: 500;
+  white-space: pre;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+</style>
+<div class="container">
+<p class="neonText1">
+Создание локального репозиторпия для ОС Astra Linux
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Все описанные ниже действия выполнялись под пользователем root
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Добрый день! Для примера будет продемонстрировано создание локальных репозиториев для ОС Astra Linux Common Edition 2.12.~
+------------
+Для чего нужны локальные репозитории?
+Локальные репозитории нужны для снижения нагрузки на внешние каналы. Если у вас есть парк из нескольких сотен ВМ, то достаточно один раз загрузить пакеты в
+локальный репозиторий, а дальше клиенты будут их получать.
+Скрипт для актуализации репозиториев смысла делать нет, т.к. репозитории для ОС Astra Linux выходят лишь один раз под определенную версию, а обновления для ОС
+как правило выпускается отдельным репозиториев. Также, репозитории для ОС Astra Linux Common Edition 2.12.~ на момент 22.04.2025 находятся в открытом доступе.
+Что касаемо репозиториев для ОС Astra Linux Special Edition, то они скрыты для просмотра и не поддаются разглашению.
+Как заполучить репозитории для ОС Astra Linux SE?
+Всё просто! Покупаете лицензию на техническую поддержку у "Группа Астра" и скачиваете ISO-образы готовых репозиториев из личного кабинета. Если каких-то
+репозиториев недостает, то делаете запрос в техническую поддержку.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<a class="neonText3">Перед скачиванием репозиториев, создайте нужны для вас каталоги. У меня репозитории будут размещаться по стандартному пути "Apache".</a>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<table border="1" align="center">
+  <tr>
+    <td colspan="3" align="Center"><a class="neonText1"><b>Таблица с ссылками для репозиториев ОС Astra Linux Common Edition 2.12.~</b></a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b> Версия</br> операционной системы </b></a></th>
+    <th><a class="neonText1"><b> Тип репозитория </b></a></th> 
+    <td align="Center"><a class="neonText4"> Команда для скачивания полного репозитория </a></a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.13</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.13/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.13/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.14</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.14/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.14/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.21</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.21/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.21/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.22</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.22/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.22/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.29</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.29/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.29/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.40</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.40/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.40/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.42</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.42/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.42/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.43</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.43/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.43/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.44</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.44/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.44/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.45</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.45/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.45/repository/ </a></td>
+  </tr>
+  <tr>
+    <th><a class="neonText2"><b>2.12.46</b></a></th>
+    <th><a class="neonText1"><b> Основной репозиторий </b></a></th>
+    <td align="Left"><a class="neonText4"> wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.46/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.46/repository/ </a></td>
+  </tr>
+  <tr>
+    <th colspan="3"><a class="neonText3"><b>End of life - окончание жизни продукта</b></a></th>
+  </tr>
+</table>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Расшифровка: wget -m -np -c -nH --cut-dirs=4 -R "index.html*" -P /var/www/html/Astra_Linux_Common_Edition/2.12.46/ http://dl.astralinux.ru/astra/frozen/2.12_x86-64/2.12.46/repository/
+
+Параметры команды:
+-m — режим зеркалирования.
+-np — не подниматься выше по директориям.
+-c — докачка файлов при обрыве.
+-nH — отключение создания каталога dl.astralinux.ru.
+--cut-dirs=4 — убирает ненужные промежуточные каталоги (astra/frozen/2.12_x86-64/2.12.46).
+-R "index.html*" — исключает файлы индексации.
+-P — каталог для сохранения.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+ls -lah /var/www/html/Astra_Linux_Common_Edition/2.12.46/repository/ |#|#| Команда для проверки каталога после скачивания репозитория
+---------------
+apt-get update -y && apt-get upgrade -y && apt-get install -y apache2 |#|#| Команда для обновления репозитория, обновления пакетов системы и установки пакета
+"apache2" со всеми нужными зависимостями
+---------------
+nano /etc/apache2/apache2.conf |#|#| Команда для редактирования конфигурационного файла "apache2.conf"
+<a class="neonText3">В конец файла нужно добавить следующие строки:</a>
+
+<a class="neonText2">ServerSignature Off
+ServerTokens Prod</a>
+---------------
+systemctl restart apache2 |#|#| Команда для перезапуска службы "apache2"
+---------------
+nano /etc/apt/apt.conf.d/99useragent |#|#| Команда для создания конфигурационного файла "99useragent"
+<a class="neonText3">Приведите конфигурационный файл к следующему виду:</a>
+
+<a class="neonText2">Acquire::http::User-Agent "Mozilla/5.0 (X11; Linux x86_64)";</a>
+---------------
+<a class="neonText3">Также создаем конфигурационный файл для отключения проверки SSL-сертификатов.</a>
+nano /etc/apt/apt.conf.d/99insecure-repos |#|#| Команда для создания конфигурационного файла "99insecure-repos"
+<a class="neonText3">Приведите конфигурационный файл к следующему виду:</a>
+
+<a class="neonText2">Acquire::https::astra-repo-local.permkrai.ru::Verify-Peer "false";</a>
+---------------
+Для версий ALSE 1.6, 1.7, 4.7, 8.1, отключение авторизации можно задать в файле <a class="neonText3">/etc/apache2/apache2.conf</a> раскоментировав <a class="neonText2">"#AstraMode on" и поменять на "AstraMode off"</a>.
+---------------
+На этом гайд закончен! Спасибо за внимание!
+</p>
+</div>
